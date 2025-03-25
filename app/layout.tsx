@@ -7,9 +7,9 @@ import Navbar from "@/components/navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "MindSync - Scaling Human Expertise with AI",
+  title: "Domel Produce - Fresh Quality Produce",
   description:
-    "MindSync transforms specialized knowledge into AI-driven solutions, making expertise accessible, scalable, and efficient.",
+    "Domel Produce, fresh produce from the finest farms to global markets.",
     generator: 'v0.dev'
 }
 
