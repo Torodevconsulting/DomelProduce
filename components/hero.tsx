@@ -1,9 +1,28 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export default function Hero() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const backgroundImages = [
+    "/avocado.jpg",
+    "/arandanos.jpg",
+    "/uvas.jpg"
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
+      )
+    }, 5000) // Change image every 5 seconds
+
+    return () => clearInterval(interval)
+  }, [])
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
@@ -12,9 +31,25 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-green-950/20"></div>
+    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Background image carousel */}
+      {backgroundImages.map((image, index) => (
+        <div 
+          key={image}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <Image 
+            src={image} 
+            alt="Background" 
+            fill 
+            priority={index === 0}
+            className="object-cover object-center"
+          />
+        </div>
+      ))}
+      
+      {/* Overlay gradient for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-green-950/50 z-[1]"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 py-20">
