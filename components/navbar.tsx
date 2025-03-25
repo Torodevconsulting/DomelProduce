@@ -23,7 +23,8 @@ export default function Navbar() {
   }
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark")
+    // Theme toggle functionality disabled
+    // setTheme(theme === "dark" ? "light" : "dark")
   }
 
   return (
@@ -64,10 +65,10 @@ export default function Navbar() {
                 variant="ghost"
                 size="icon"
                 aria-label="Toggle theme"
-                onClick={toggleTheme}
-                className="text-foreground"
+                disabled
+                className="text-foreground opacity-50 cursor-not-allowed"
               >
-                {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                <Sun className="h-5 w-5" />
               </Button>
             )}
           </nav>
@@ -78,10 +79,10 @@ export default function Navbar() {
                 variant="ghost"
                 size="icon"
                 aria-label="Toggle theme"
-                onClick={toggleTheme}
-                className="text-foreground"
+                disabled
+                className="text-foreground opacity-50 cursor-not-allowed"
               >
-                {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                <Sun className="h-5 w-5" />
               </Button>
             )}
 
