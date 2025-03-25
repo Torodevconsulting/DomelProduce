@@ -56,15 +56,15 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto backdrop-blur-md bg-white/30 dark:bg-background/40 p-8 md:p-12 rounded-xl border border-white/10 shadow-lg">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-12 bg-green-500"></div>
-            <span className="text-green-500 font-medium">PREMIUM PRODUCE EXPORTER</span>
+            <span className="text-green-500 font-medium">EXPORTADOR DE PRODUCTOS PREMIUM</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-foreground mb-8 leading-tight tracking-tight">
-            Fresh <span className="text-green-500">Quality</span> Produce from Farm to World
+            Productos Frescos de <span className="text-green-500">Calidad</span> de la Granja al Mundo
           </h1>
 
           <p className="text-xl md:text-2xl text-black/70 dark:text-foreground/70 mb-12 leading-relaxed max-w-3xl">
-            Domel Produce exports premium quality avocados, pineapples, and other fresh produce from the finest farms to global markets.
+            Domel Produce exporta aguacates, piñas y otros productos frescos de calidad premium desde las mejores granjas a mercados globales.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
@@ -73,7 +73,7 @@ export default function Hero() {
               onClick={() => scrollToSection("final-cta")}
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg h-auto"
             >
-              Contact Us
+              Contáctanos
             </Button>
             <Button
               size="lg"
@@ -81,7 +81,7 @@ export default function Hero() {
               onClick={() => scrollToSection("how-it-works")}
               className="text-black dark:text-foreground border-green-500/20 hover:bg-green-500/5 px-8 py-6 text-lg h-auto group"
             >
-              Our Products
+              Nuestros Productos
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
