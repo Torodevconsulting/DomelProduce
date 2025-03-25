@@ -53,7 +53,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 py-20">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto backdrop-blur-md bg-background/40 p-8 md:p-12 rounded-xl border border-white/10 shadow-lg">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-12 bg-green-500"></div>
             <span className="text-green-500 font-medium">PREMIUM PRODUCE EXPORTER</span>
