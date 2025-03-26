@@ -25,7 +25,7 @@ export default function Testimonials() {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground">Sarah Johnson</h4>
+                  <h4 className="font-bold text-foreground">Karen Vásquez</h4>
                   <p className="text-sm text-foreground/60">Operations Director, AutoFix Inc.</p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ export default function Testimonials() {
                   />
                 </div>
                 <div>
-                  <h4 className="font-bold text-foreground">Michael Chen</h4>
+                  <h4 className="font-bold text-foreground">Santiago Cabrera</h4>
                   <p className="text-sm text-foreground/60">CTO, Industrial Solutions Ltd.</p>
                 </div>
               </div>
@@ -58,10 +58,9 @@ export default function Testimonials() {
           <div className="mt-16 bg-gradient-to-r from-purple-800 to-indigo-900 rounded-xl overflow-hidden shadow-xl">
             <div className="grid md:grid-cols-2">
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Case Study: TechRepair Global</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Domel Produce: Sabor Global, Calidad Sin Fronteras</h3>
                 <p className="text-blue-100 mb-6">
-                  Learn how TechRepair Global reduced training time by 70% and improved customer satisfaction by 45%
-                  with MindSync's AI expertise platform.
+                Llevamos lo mejor de nuestros campos a más de 80 países en los cinco continentes. Cada fruta que exportamos cumple con los más estrictos estándares de calidad y fitosanitarios, garantizando que el sabor auténtico y la frescura lleguen intactos a tu mesa, sin importar la distancia.
                 </p>
                 <div>
                   <button className="bg-white text-purple-900 px-6 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors">
@@ -71,7 +70,7 @@ export default function Testimonials() {
               </div>
               <div className="hidden md:block">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/manzanas.jpg"
                   alt="Case study preview"
                   className="w-full h-full object-cover"
                 />

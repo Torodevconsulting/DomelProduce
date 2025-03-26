@@ -36,7 +36,7 @@ export default function Navbar() {
               <span className="bg-purple-600 dark:bg-purple-500 w-10 h-10 rounded-md mr-3 flex items-center justify-center">
                 <Brain size={24} className="text-white" />
               </span>
-              MindSync
+              Domel Produce
             </a>
           </div>
 
