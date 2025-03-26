@@ -11,7 +11,6 @@ export default function Testimonials() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Testimonial 1 */}
             <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-8 relative">
-              <div className="absolute top-0 left-8 transform -translate-y-1/2 text-6xl text-purple-400">"</div>
               <p className="text-foreground/80 mb-6 pt-4 relative z-10">
                 MindSync has revolutionized our repair shop. We've captured the expertise of our senior mechanics and
                 now our newer staff perform at expert levels within weeks, not years.
@@ -33,7 +32,6 @@ export default function Testimonials() {
 
             {/* Testimonial 2 */}
             <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-8 relative">
-              <div className="absolute top-0 left-8 transform -translate-y-1/2 text-6xl text-purple-400">"</div>
               <p className="text-foreground/80 mb-6 pt-4 relative z-10">
                 The ROI was immediate. Our maintenance team now resolves issues 60% faster with MindSync's AI guidance,
                 and our downtime has been reduced by over 40%.
