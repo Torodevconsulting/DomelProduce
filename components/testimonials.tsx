@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-background">
+    <section id="testimonials" className="py-24 bg-gray-200">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-6">Success Stories</h2>

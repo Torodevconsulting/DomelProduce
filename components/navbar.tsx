@@ -60,6 +60,8 @@ export default function Navbar() {
               Contacto
             </Button>
 
+            {/*
+            {/*
             {mounted && (
               <Button
                 variant="ghost"
@@ -71,9 +73,13 @@ export default function Navbar() {
                 <Sun className="h-5 w-5" />
               </Button>
             )}
+          */}
+          
           </nav>
 
           <div className="flex items-center md:hidden space-x-4">
+            {/*
+            {/*
             {mounted && (
               <Button
                 variant="ghost"
@@ -85,6 +91,8 @@ export default function Navbar() {
                 <Sun className="h-5 w-5" />
               </Button>
             )}
+          */}
+          
 
             <button className="text-foreground" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? (
@@ -133,20 +141,20 @@ export default function Navbar() {
                 onClick={() => scrollToSection("how-it-works")}
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
               >
-                How It Works
+                Nuestros Valores
               </button>
               <button
                 onClick={() => scrollToSection("use-cases")}
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
               >
-                Use Cases
+                Productos
               </button>
               <Button
                 onClick={() => scrollToSection("final-cta")}
                 className="bg-purple-600 hover:bg-purple-700 text-white w-full justify-center mt-4"
                 size="lg"
               >
-                Get Early Access
+                Contacto
               </Button>
             </nav>
           </div>

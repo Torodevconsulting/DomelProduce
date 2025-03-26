@@ -56,11 +56,11 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto backdrop-blur-md bg-white/30 dark:bg-background/40 p-8 md:p-12 rounded-xl border border-white/10 shadow-lg">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-px w-12 bg-white"></div>
-            <span className="text-white font-medium">EXPORTADOR DE PRODUCTOS PREMIUM</span>
+            <span className="text-white font-medium">EXPORTADOR DE PRODUCTOS FRUTICOLAS PREMIUM</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-foreground mb-8 leading-tight tracking-tight">
-            Productos Frescos de <span className="text-white">Calidad</span> de la Granja al Mundo
+            Domel Produce ofrece una variedad de productos Frescos de <span className="text-white">Calidad</span> de la mano de los mejores productores.
           </h1>
 
           <p className="text-xl md:text-2xl text-black/70 dark:text-foreground/70 mb-12 leading-relaxed max-w-3xl">
