@@ -2,21 +2,21 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Capture Knowledge",
+      title: "Desde el campo",
       description:
-        "Our AI learns from experienced professionals through observation, conversation, and documentation. We digitize expertise that would otherwise be lost.",
+        "En Domel Produce, nuestro viaje comienza en los campos más fértiles. Cada fruta es el resultado de un cuidado meticuloso, trabajando en armonía con agricultores locales que conocen cada surco de tierra. Seleccionamos minuciosamente cada cultivo, asegurando que solo los mejores frutos lleguen a nuestras instalaciones.",
     },
     {
       number: "02",
-      title: "Scale Expertise",
+      title: "Pasando por el Producto",
       description:
-        "Our platform transforms captured knowledge into AI-powered guidance and automation systems that can be deployed across your organization.",
+        "Transformamos la riqueza natural en productos de la más alta calidad. Nuestros procesos de selección, limpieza y empaque están diseñados para preservar la esencia y frescura de cada fruta. Con tecnología de punta y un equipo dedicado, garantizamos que cada producto mantenga su sabor original y sus propiedades nutritivas.",
     },
     {
       number: "03",
-      title: "Optimize Workflows",
+      title: "Hasta la gente",
       description:
-        "Implement AI-assisted execution of complex tasks, enabling faster, smarter operations with reduced training time and consistent quality.",
+        "Nuestra misión no termina con la exportación. Nos comprometemos a que cada fruta de Domel Produce recorra un camino seguro hasta el consumidor final. Desde sofisticados métodos de conservación hasta una logística eficiente, nos aseguramos de que nuestros productos lleguen intactos, manteniendo su calidad excepcional.",
     },
   ]
 
@@ -27,12 +27,12 @@ export default function HowItWorks() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="h-px w-8 bg-purple-500"></div>
-              <span className="text-purple-500 font-medium text-sm">THE PROCESS</span>
+              <span className="text-purple-500 font-medium text-sm">Nuestros Valores</span>
               <div className="h-px w-8 bg-purple-500"></div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">How MindSync Works</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Del campo a tu mesa</h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Our three-step process transforms human expertise into scalable AI solutions
+            Domel Produce: Cultivando calidad, exportando sabor.
             </p>
           </div>
 
