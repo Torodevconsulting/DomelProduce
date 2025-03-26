@@ -3,9 +3,9 @@ export default function Testimonials() {
     <section id="testimonials" className="py-24 bg-gray-200">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-6">Success Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-6">Respaldados por la experiencia de nuestros clientes</h2>
           <p className="text-xl text-center text-foreground/70 mb-16 max-w-3xl mx-auto">
-            See how leading companies are transforming their operations with MindSync.
+            +1000 programas de exportación exitosos a nivel internacional. 
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -53,11 +53,11 @@ export default function Testimonials() {
           </div>
 
           {/* Case study preview */}
-          <div className="mt-16 bg-gradient-to-r from-purple-800 to-indigo-900 rounded-xl overflow-hidden shadow-xl">
+          <div className="mt-16 bg-gradient-to-r from-green-300 to-green-400 rounded-xl overflow-hidden shadow-xl">
             <div className="grid md:grid-cols-2">
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Nuestro Éxito: Aguacate, Mango y Uva</h3>
-                <p className="text-blue-100 mb-6">
+                <h3 className="text-2xl font-bold text- mb-4">Nuestro Éxito: Aguacate, Mango y Uva</h3>
+                <p className="text-black mb-6">
                 Nuestros productos estrellas han posicionado a Domel Produce como un referente en la exportación de fruta peruana. Con una facturación de 21 millones de dólares en 2024 y una visión clara de expansión en el mercado europeo, somos tu mejor aliado en importación de frutas.
                 </p>
                 <div>
