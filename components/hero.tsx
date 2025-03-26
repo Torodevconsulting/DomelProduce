@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowDown, ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 export default function Hero() {
@@ -78,11 +78,18 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => scrollToSection("use-cases")}
               className="text-black dark:text-foreground border-green-500/20 hover:bg-green-300/5 px-8 py-6 text-lg h-auto group"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/cvtest.pdf';
+                link.download = 'cvtest.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
             >
-              Nuestros Productos
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              Descarga Nuestro Catálogo
+              <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
         </div>
