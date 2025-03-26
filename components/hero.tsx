@@ -71,7 +71,7 @@ export default function Hero() {
             <Button
               size="lg"
               onClick={() => scrollToSection("final-cta")}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg h-auto"
+              className="bg-green-300 hover:bg-green-400 text-black px-8 py-6 text-lg h-auto"
             >
               Contáctanos
             </Button>
@@ -79,7 +79,7 @@ export default function Hero() {
               size="lg"
               variant="outline"
               onClick={() => scrollToSection("use-cases")}
-              className="text-black dark:text-foreground border-green-500/20 hover:bg-green-500/5 px-8 py-6 text-lg h-auto group"
+              className="text-black dark:text-foreground border-green-500/20 hover:bg-green-300/5 px-8 py-6 text-lg h-auto group"
             >
               Nuestros Productos
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

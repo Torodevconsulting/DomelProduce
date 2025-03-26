@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold text-foreground flex items-center">
-              <span className="bg-purple-600 dark:bg-purple-500 w-10 h-10 rounded-md mr-3 flex items-center justify-center">
+              <span className="bg-green-400 dark:bg-green-700 w-10 h-10 rounded-md mr-3 flex items-center justify-center">
                 <Brain size={24} className="text-white" />
               </span>
               Domel Produce
@@ -55,7 +55,7 @@ export default function Navbar() {
             </button>
             <Button
               onClick={() => scrollToSection("final-cta")}
-              className="bg-purple-600 hover:bg-purple-700 text-white"
+              className="bg-green-300 hover:bg-green-400 text-black"
             >
               Contacto
             </Button>
@@ -151,7 +151,7 @@ export default function Navbar() {
               </button>
               <Button
                 onClick={() => scrollToSection("final-cta")}
-                className="bg-purple-600 hover:bg-purple-700 text-white w-full justify-center mt-4"
+                className="bg-green-400 hover:bg-green-700 text-black w-full justify-center mt-4"
                 size="lg"
               >
                 Contacto

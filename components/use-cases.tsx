@@ -34,8 +34,8 @@ export default function UseCases() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-8 bg-purple-500"></div>
-              <span className="text-purple-500 font-medium text-sm">LO QUE RESPALDA NUESTRA CALIDAD</span>
+              <div className="h-px w-8 bg-green-700"></div>
+              <span className="text-green-700 font-medium text-sm">LO QUE RESPALDA NUESTRA CALIDAD</span>
               <div className="h-px w-8 bg-purple-500"></div>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Certificaciones</h2>

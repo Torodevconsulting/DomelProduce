@@ -40,7 +40,7 @@ export default function FinalCTA() {
                 <option value="retail">Retail</option>
                 <option value="other">Other</option>
               </select>
-              <Button size="lg" className="w-full bg-purple-600 hover:bg-purple-700 py-6 h-auto text-lg">
+              <Button size="lg" className="w-full bg-green-400 hover:bg-green-600 py-6 h-auto text-lg text-black">
                 Request Early Access
               </Button>
               <p className="text-xs text-center text-foreground/50 mt-4">

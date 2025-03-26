@@ -26,9 +26,9 @@ export default function HowItWorks() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-8 bg-purple-500"></div>
-              <span className="text-purple-500 font-medium text-sm">Nuestros Valores</span>
-              <div className="h-px w-8 bg-purple-500"></div>
+              <div className="h-px w-8 bg-green-700"></div>
+              <span className="text-green-700 font-medium text-sm">Nuestros Valores</span>
+              <div className="h-px w-8 bg-green-700"></div>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Del campo a tu mesa</h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
@@ -41,7 +41,7 @@ export default function HowItWorks() {
               <div key={index} className="relative">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
                   <div className="md:w-1/4 flex flex-col">
-                    <span className="text-5xl font-bold text-purple-500/30">{step.number}</span>
+                    <span className="text-5xl font-bold text-green-700/30">{step.number}</span>
                   </div>
                   <div className="md:w-3/4">
                     <h3 className="text-2xl font-bold text-foreground mb-4">{step.title}</h3>
