@@ -8,10 +8,10 @@ export default function FinalCTA() {
           <div className="bg-gradient-to-br from-purple-950/50 to-background border border-purple-500/20 rounded-2xl p-8 md:p-12">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                Join the Future of AI-Powered Expertise
+                Tu próximo programa de exportación está a un solo paso
               </h2>
               <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-                Be among the first to transform how your business captures, scales, and deploys expertise
+                Nuestro equipo está aquí para ayudarte a conseguir la fruta de mejor calidad. Contáctanos para obtener más información y acceder a nuestro catálogo de productos.
               </p>
             </div>
 

@@ -45,19 +45,19 @@ export default function Navbar() {
               onClick={() => scrollToSection("how-it-works")}
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
-              How It Works
+              Nuestros Valores
             </button>
             <button
               onClick={() => scrollToSection("use-cases")}
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
-              Use Cases
+              Productos 
             </button>
             <Button
               onClick={() => scrollToSection("final-cta")}
               className="bg-purple-600 hover:bg-purple-700 text-white"
             >
-              Get Early Access
+              Contacto
             </Button>
 
             {mounted && (
