@@ -48,9 +48,6 @@ export default function HowItWorks() {
                     <p className="text-foreground/70 text-lg leading-relaxed">{step.description}</p>
                   </div>
                 </div>
-                {index < steps.length - 1 && (
-                  <div className="absolute left-[2.5rem] top-full h-16 w-px bg-purple-500/20 hidden md:block"></div>
-                )}
               </div>
             ))}
           </div>

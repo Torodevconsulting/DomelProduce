@@ -58,13 +58,13 @@ export default function Testimonials() {
           <div className="mt-16 bg-gradient-to-r from-purple-800 to-indigo-900 rounded-xl overflow-hidden shadow-xl">
             <div className="grid md:grid-cols-2">
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-white mb-4">Domel Produce: Sabor Global, Calidad Sin Fronteras</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Nuestro Éxito: Aguacate, Mango y Uva</h3>
                 <p className="text-blue-100 mb-6">
-                Llevamos lo mejor de nuestros campos a más de 80 países en los cinco continentes. Cada fruta que exportamos cumple con los más estrictos estándares de calidad y fitosanitarios, garantizando que el sabor auténtico y la frescura lleguen intactos a tu mesa, sin importar la distancia.
+                Nuestros productos estrellas han posicionado a Domel Produce como un referente en la exportación de fruta peruana. Con una facturación de 21 millones de dólares en 2024 y una visión clara de expansión en el mercado europeo, somos tu mejor aliado en importación de frutas.
                 </p>
                 <div>
                   <button className="bg-white text-purple-900 px-6 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors">
-                    Coming Soon
+                    Revisa nuestro calendario de exportación
                   </button>
                 </div>
               </div>
