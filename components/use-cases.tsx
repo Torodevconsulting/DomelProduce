@@ -20,12 +20,18 @@ export default function UseCases() {
       icon: <HeadsetIcon className="h-6 w-6 text-purple-500" />,
       metrics: ["90% faster resolution", "Consistent quality", "Unlimited scaling"],
     },
+    {
+      title: "Technical Support",
+      description: "AI replacing human consultants for technical guidance and troubleshooting.",
+      icon: <HeadsetIcon className="h-6 w-6 text-purple-500" />,
+      metrics: ["90% faster resolution", "Consistent quality", "Unlimited scaling"],
+    },
   ]
 
   return (
     <section id="use-cases" className="py-24 bg-background border-b border-border/10">
-      <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
+      <div className="container mx-w-full">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="h-px w-8 bg-purple-500"></div>
@@ -38,7 +44,7 @@ export default function UseCases() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {useCases.map((useCase, index) => (
               <div key={index} className="bg-muted/50 rounded-xl p-8 hover:bg-muted transition-colors duration-300">
                 <div className="mb-6">{useCase.icon}</div>

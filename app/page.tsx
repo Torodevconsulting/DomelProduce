@@ -4,6 +4,7 @@ import HowItWorks from "@/components/how-it-works"
 import UseCases from "@/components/use-cases"
 import Testimonials from "@/components/testimonials"
 import FinalCTA from "@/components/final-cta"
+import Footer from "@/components/footer"
 
 export default function LandingPage() {
   return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <UseCases />
       <Testimonials />
       <FinalCTA />
+      <Footer />
     </main>
   )
 }
