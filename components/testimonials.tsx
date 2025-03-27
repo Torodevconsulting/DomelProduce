@@ -1,9 +1,21 @@
 "use client";
 import { useState } from 'react';
 import { ExportCalendarModal } from './export-calendar-modal';
+import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Image from 'next/image';
 
 export default function Testimonials() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const images = [
+    '/domelmangoperation.jpg',
+    '/domelproduceoperation.jpg',
+    '/lemonprocessing.jpg',
+    '/mangocrop.jpg',
+    '/mangocroping.jpg',
+  ];
+
   return (
     <section id="testimonials" className="py-24 bg-gray-200">
       <div className="container mx-auto px-4">
@@ -13,48 +25,27 @@ export default function Testimonials() {
           +1000 successful international export programs. 
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-8 relative">
-              <p className="text-foreground/80 mb-6 pt-4 relative z-10">
-                MindSync has revolutionized our repair shop. We've captured the expertise of our senior mechanics and
-                now our newer staff perform at expert levels within weeks, not years.
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="/placeholder.svg?height=100&width=100"
-                    alt="Testimonial author"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground">Karen Vásquez</h4>
-                  <p className="text-sm text-foreground/60">Operations Director, AutoFix Inc.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-8 relative">
-              <p className="text-foreground/80 mb-6 pt-4 relative z-10">
-                The ROI was immediate. Our maintenance team now resolves issues 60% faster with MindSync's AI guidance,
-                and our downtime has been reduced by over 40%.
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img
-                    src="/placeholder.svg?height=100&width=100"
-                    alt="Testimonial author"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground">Santiago Cabrera</h4>
-                  <p className="text-sm text-foreground/60">CTO, Industrial Solutions Ltd.</p>
-                </div>
-              </div>
-            </div>
+          {/* Carousel */}
+          <div className="mb-16">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {images.map((src, index) => (
+                  <CarouselItem key={index}>
+                    <div className="h-[400px] w-full relative overflow-hidden rounded-lg">
+                      <Image 
+                        src={src} 
+                        alt={`Product ${index + 1}`} 
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
           </div>
 
           {/* Case study preview */}
@@ -85,7 +76,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-    <ExportCalendarModal open={isOpen} onOpenChange={setIsOpen} />
+      <ExportCalendarModal open={isOpen} onOpenChange={setIsOpen} />
     </section>
   )
 }

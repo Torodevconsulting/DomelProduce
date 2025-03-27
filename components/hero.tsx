@@ -10,7 +10,7 @@ export default function Hero() {
   const backgroundImages = [
     "/greenavocado.jpg",
     "/arandanos.jpg",
-    "/uvas.jpg"
+    "/tangerines.webp"
   ]
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Hero() {
             priority={index === 0}
             className="object-cover object-center"
           />
-          <div className="absolute inset-0 backdrop-blur-[3px] bg-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[3px] bg-black/20"></div>
         </div>
       ))}
       
@@ -61,11 +61,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black dark:text-foreground mb-4 md:mb-8 leading-tight tracking-tight">
-            Domel Produce: Productos Frescos de <span className="text-white">Calidad</span> de los mejores productores.
+          Global Flavors, <span className="text-green-300">Local</span> Roots.
           </h1>
 
           <p className="text-lg md:text-xl lg:text-2xl text-black/70 dark:text-foreground/70 mb-8 md:mb-12 leading-relaxed max-w-3xl">
-            Domel Produce exporta aguacates, piñas y otros productos calidad premium desde las mejores granjas a mercados globales.
+          Peru's Valleys Nourishing the World: From the northern and southern Perú.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6">

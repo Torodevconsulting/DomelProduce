@@ -24,7 +24,12 @@ export default function ProductsPage() {
 
   return (
     <div className="container mx-auto px-4 py-16 pt-20">
-      <h1 className="text-4xl font-bold text-center mb-12">Our Premium Produce</h1>
+      <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-center mb-6">
+        Our Premium Produce
+      </h1>
+      <p className="text-center text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+        Explore our diverse catalog of premium fruits and vegetables, sourced from the finest farms and delivered with uncompromising quality.
+      </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product, index) => (
           <div key={index} className="group cursor-pointer" onClick={() => setSelectedProduct(product)}>
