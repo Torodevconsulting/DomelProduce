@@ -22,9 +22,9 @@ Por favor, contáctame para más detalles.`
   }
 
   return (
-    <section id="final-cta" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+    <section id="final-cta" className="py-24 bg-background ">
+      <div className="container mx-auto px-4 ">
+        <div className="max-w-4xl mx-auto shadow-xl">
           <div className="bg-gradient-to-br bg-gray-200 rounded-2xl p-8 md:p-12">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">

@@ -44,10 +44,10 @@ export default function UseCases() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-8 ">
             {useCases.map((useCase, index) => (
-              <div key={index} className="bg-gray-200 rounded-xl p-7 hover:bg-muted transition-colors duration-300">
-                <div className="flex items-center justify-center mb-6">
+              <div key={index} className="bg-gray-200 rounded-xl p-7 hover:bg-muted transition-colors duration-300 shadow-xl">
+                <div className="flex items-center justify-center mb-6 ">
                   <Image src={useCase.image} alt={useCase.title} width={58} height={58} />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{useCase.title}</h3>

@@ -33,7 +33,7 @@ export default function ProductsPage() {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product, index) => (
           <div key={index} className="group cursor-pointer" onClick={() => setSelectedProduct(product)}>
-            <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-md">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-xl">
               <Image 
                 src={product.image} 
                 alt={product.name} 
