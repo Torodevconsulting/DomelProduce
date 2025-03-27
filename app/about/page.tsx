@@ -187,7 +187,7 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
-              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">Americas</h3>
+              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">South and North America</h3>
               <p className="text-gray-600 dark:text-gray-400">Serving markets in North and South America with fresh produce year-round.</p>
             </div>
             <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
@@ -195,7 +195,7 @@ export default function AboutPage() {
               <p className="text-gray-600 dark:text-gray-400">Strategic partnerships with major European distributors and retailers.</p>
             </div>
             <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
-              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">Asia Pacific</h3>
+              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">Asia</h3>
               <p className="text-gray-600 dark:text-gray-400">Growing presence in Asian markets with premium quality exports.</p>
             </div>
           </div>
@@ -208,14 +208,14 @@ export default function AboutPage() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                ¿Interesado en nuestros productos?
+                ¿Looking for a reliable source of premium Peruvian fruits??
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Contáctanos para conocer más sobre nuestra oferta de productos y servicios.
+              Unlock the potential of Peru's finest produce: Connect with our team to explore our comprehensive product lineup.
               </p>
             </div>
             <div className="space-x-4">
-              <Button onClick={() => setIsContactModalOpen(true)}>Contáctanos</Button>
+              <Button onClick={() => setIsContactModalOpen(true)} className="bg-green-300 hover:bg-green-400 text-black">Contact us</Button>
             </div>
           </div>
         </div>

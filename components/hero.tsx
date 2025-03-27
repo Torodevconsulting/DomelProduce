@@ -54,17 +54,15 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 py-10 md:py-20">
-        <div className="backdrop-blur-md bg-white/30 dark:bg-background/40 p-6 md:p-8 lg:p-12 rounded-xl border border-white/10 max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto">
+        <div className="backdrop-blur-md bg-white/50 dark:bg-background/40 p-6 md:p-8 lg:p-12 rounded-xl border border-white/10 max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto">
           <div className="flex items-center gap-2 mb-4 md:mb-8">
-            <div className="h-px w-12 bg-white"></div>
-            <span className="text-white font-medium text-sm md:text-base">PRODUCTOS FRUTÍCOLAS PREMIUM</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black dark:text-foreground mb-4 md:mb-8 leading-tight tracking-tight">
           Global Flavors, <span className="text-green-300">Local</span> Roots.
           </h1>
 
-          <p className="text-lg md:text-xl lg:text-2xl text-black/70 dark:text-foreground/70 mb-8 md:mb-12 leading-relaxed max-w-3xl">
+          <p className="text-lg md:text-xl lg:text-2xl text-black/70 dark:text-foreground/70 mb-8 md:mb-12 leading-relaxed max-w-4xl font-semibold">
           Peru's Valleys Nourishing the World: From the northern and southern Perú.
           </p>
 
