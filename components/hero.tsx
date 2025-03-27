@@ -31,7 +31,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-0">
       {/* Background image carousel */}
       {backgroundImages.map((image, index) => (
         <div 
@@ -52,22 +52,22 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/50 z-[1]"></div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10 py-20">
-        <div className="max-w-7xl mx-auto backdrop-blur-md bg-white/30 dark:bg-background/40 p-8 md:p-12 rounded-xl border border-white/10 shadow-lg">
-          <div className="flex items-center gap-2 mb-8">
+      <div className="container mx-auto px-4 relative z-10 py-10 md:py-20">
+        <div className="backdrop-blur-md bg-white/30 dark:bg-background/40 p-6 md:p-8 lg:p-12 rounded-xl border border-white/10 max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto">
+          <div className="flex items-center gap-2 mb-4 md:mb-8">
             <div className="h-px w-12 bg-white"></div>
-            <span className="text-white font-medium">EXPORTADOR DE PRODUCTOS FRUTICOLAS PREMIUM</span>
+            <span className="text-white font-medium text-sm md:text-base">PRODUCTOS FRUTÍCOLAS PREMIUM</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-black dark:text-foreground mb-8 leading-tight tracking-tight">
-            Domel Produce ofrece una variedad de productos Frescos de <span className="text-white">Calidad</span> de la mano de los mejores productores.
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-black dark:text-foreground mb-4 md:mb-8 leading-tight tracking-tight">
+            Domel Produce: Productos Frescos de <span className="text-white">Calidad</span> de los mejores productores.
           </h1>
 
-          <p className="text-xl md:text-2xl text-black/70 dark:text-foreground/70 mb-12 leading-relaxed max-w-3xl">
-            Domel Produce exporta aguacates, piñas y otros productos frescos de calidad premium desde las mejores granjas a mercados globales.
+          <p className="text-lg md:text-xl lg:text-2xl text-black/70 dark:text-foreground/70 mb-8 md:mb-12 leading-relaxed max-w-3xl">
+            Domel Produce exporta aguacates, piñas y otros productos calidad premium desde las mejores granjas a mercados globales.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
             <Button
               size="lg"
               onClick={() => scrollToSection("final-cta")}
@@ -78,7 +78,7 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="text-black dark:text-foreground border-green-500/20 hover:bg-green-300/5 px-8 py-6 text-lg h-auto group"
+              className="text-black border hover:bg-white/5 px-8 py-6 text-lg h-auto group"
               onClick={() => {
                 const link = document.createElement('a');
                 link.href = '/cvtest.pdf';

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
-import { Moon, Sun, Brain } from "lucide-react"
+import Image from "next/image"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,18 +29,29 @@ export default function Navbar() {
 
   return (
     <header className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/10">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 p-">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-foreground flex items-center">
-              <span className="bg-green-400 dark:bg-green-700 w-10 h-10 rounded-md mr-3 flex items-center justify-center">
-                <Brain size={24} className="text-white" />
-              </span>
-              Domel Produce
+            <a href="#" className="flex items-center">
+              <div className="relative w-56 h-20">
+                <Image
+                  src="/domelproducelogo.png"
+                  alt="Domel Produce Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </a>
           </div>
 
           <nav className="hidden md:flex items-center space-x-10">
+            <a
+              href="/about"
+              className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
+            >
+              Sobre Nosotros
+            </a>
             <button
               onClick={() => scrollToSection("how-it-works")}
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
@@ -137,6 +148,12 @@ export default function Navbar() {
         <div className="md:hidden bg-background/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-6">
             <nav className="flex flex-col space-y-6">
+              <a
+                href="/about"
+                className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
+              >
+                Sobre Nosotros
+              </a>
               <button
                 onClick={() => scrollToSection("how-it-works")}
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
