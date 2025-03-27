@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, ArrowRight } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 import Image from "next/image"
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const backgroundImages = [
-    "/avocado.jpg",
+    "/greenavocado.jpg",
     "/arandanos.jpg",
     "/uvas.jpg"
   ]
