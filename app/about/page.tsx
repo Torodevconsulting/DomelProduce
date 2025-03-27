@@ -48,13 +48,13 @@ export default function AboutPage() {
       </section>
 
       {/* Our Reason to Be Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900/10">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-green-50 dark:bg-green-900/10">
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
               <Image
-                src="/avocado.jpg"
-                alt="Fresh produce from Domel Produce"
+                src="/proceso1.jpg"
+                alt="Linea de procesamiento de aguacates"
                 fill
                 className="object-cover"
               />
@@ -126,6 +126,28 @@ export default function AboutPage() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2">Innovation Leadership</h3>
+                    <p className="text-gray-600 dark:text-gray-400">We pioneer advanced agricultural technologies and practices to enhance productivity and product quality while setting industry standards.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="p-2 bg-green-100 rounded-lg dark:bg-green-900/20">
+                    <svg
+                      className="w-6 h-6 text-green-600 dark:text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
                         d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                       />
                     </svg>
@@ -141,41 +163,47 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certifications Section */}
+      {/* We're going places Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-green-50 dark:bg-green-900/10">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12">
-            Nuestras Certificaciones
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8">
+            We're going places
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+          <p className="text-gray-600 dark:text-gray-400 text-lg text-center mb-12 max-w-3xl mx-auto">
+            From our fields in Peru to tables around the world, we're proud to export premium quality produce to major markets globally.
+          </p>
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border-2 border-green-200 dark:border-green-900/30 shadow-xl">
             <Image
-              src="/globalgap.png"
-              alt="GlobalGAP Certification"
-              width={150}
-              height={150}
+              src="/mapaexport.png"
+              alt="Global Export Operations Map"
+              fill
               className="object-contain"
+              priority
             />
-            <Image
-              src="/haccp.png"
-              alt="HACCP Certification"
-              width={150}
-              height={150}
-              className="object-contain"
-            />
-            <Image
-              src="/iso22000.png"
-              alt="ISO 22000 Certification"
-              width={150}
-              height={150}
-              className="object-contain"
-            />
-            <Image
-              src="/organic.png"
-              alt="Organic Certification"
-              width={150}
-              height={150}
-              className="object-contain"
-            />
+            <div className="absolute bottom-4 left-4 space-y-2">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                <span className="text-sm text-gray-600 dark:text-gray-400">Active Export Routes</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+                <span className="text-sm text-gray-600 dark:text-gray-400">Distribution Centers</span>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
+              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">Americas</h3>
+              <p className="text-gray-600 dark:text-gray-400">Serving markets in North and South America with fresh produce year-round.</p>
+            </div>
+            <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
+              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">Europe</h3>
+              <p className="text-gray-600 dark:text-gray-400">Strategic partnerships with major European distributors and retailers.</p>
+            </div>
+            <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
+              <h3 className="font-semibold text-xl mb-3 text-green-800 dark:text-green-200">Asia Pacific</h3>
+              <p className="text-gray-600 dark:text-gray-400">Growing presence in Asian markets with premium quality exports.</p>
+            </div>
           </div>
         </div>
       </section>

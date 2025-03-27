@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed w-full top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/10">
-      <div className="container mx-auto px-4 p-">
+      <div className="container mx-auto px-4 p-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
