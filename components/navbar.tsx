@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,7 +33,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 p-6">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <a href="#" className="flex items-center">
+            <a href="/" className="flex items-center">
               <div className="relative w-56 h-20">
                 <Image
                   src="/domelproducelogo.png"
@@ -46,30 +47,30 @@ export default function Navbar() {
           </div>
 
           <nav className="hidden md:flex items-center space-x-10">
-            <a
+            <Link
               href="/about"
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
-              Sobre Nosotros
-            </a>
-            <button
-              onClick={() => scrollToSection("how-it-works")}
+              About Us
+            </Link>
+            <Link
+              href="/#how-it-works"
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
-              Nuestros Valores
-            </button>
-            <button
-              onClick={() => scrollToSection("use-cases")}
+              Our Values
+            </Link>
+            <Link
+              href="/#use-cases"
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
-              Productos 
-            </button>
-            <Button
-              onClick={() => scrollToSection("final-cta")}
-              className="bg-green-300 hover:bg-green-400 text-black"
+              Products 
+            </Link>
+            <Link
+              href="/#final-cta"
+              className="bg-green-300 hover:bg-green-400 text-black rounded-md px-4 py-2 text-sm font-medium"
             >
-              Contacto
-            </Button>
+              Contact
+            </Link>
 
             {/*
             {/*
@@ -148,31 +149,30 @@ export default function Navbar() {
         <div className="md:hidden bg-background/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-6">
             <nav className="flex flex-col space-y-6">
-              <a
+              <Link
                 href="/about"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
               >
-                Sobre Nosotros
-              </a>
-              <button
-                onClick={() => scrollToSection("how-it-works")}
+                About Us
+              </Link>
+              <Link
+                href="/#how-it-works"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
               >
-                Nuestros Valores
-              </button>
-              <button
-                onClick={() => scrollToSection("use-cases")}
+                Our Values
+              </Link>
+              <Link
+                href="/#use-cases"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
               >
-                Productos
-              </button>
-              <Button
-                onClick={() => scrollToSection("final-cta")}
-                className="bg-green-400 hover:bg-green-700 text-black w-full justify-center mt-4"
-                size="lg"
+                Products
+              </Link>
+              <Link
+                href="/#final-cta"
+                className="bg-green-400 hover:bg-green-700 text-black w-full justify-center mt-4 rounded-md px-4 py-2 text-lg font-medium text-center"
               >
-                Contacto
-              </Button>
+                Contact
+              </Link>
             </nav>
           </div>
         </div>
