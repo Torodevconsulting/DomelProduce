@@ -11,11 +11,12 @@ export default function AboutPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Sobre Nosotros
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none p-10">
+                ¿Who we are and what's the Domel Produce value to the market?
               </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Comprometidos con la excelencia en la producción y distribución de frutas frescas
+              <p className="mx-auto w-full text-gray-500 md:text-xl dark:text-gray-400 p-10">
+              We're a family company, dedicated to the production of mango, avocado, lemon, ginger, onion, tangerine, orange and grape. Us have international quality certifications, guaranteeing the high quality of our products.
+              We are located in the north of Peru, where a wide range of fruits, vegetables and legumes are grown and cared for with great responsibility every day.
               </p>
             </div>
           </div>
@@ -23,101 +24,118 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-green-50 dark:bg-green-900/10">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-200 dark:bg-green-900/10">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Nuestra Misión
+                Our Mission
               </h2>
-              <p className="text-gray-500 dark:text-gray-400">
-                Proporcionar frutas frescas y de alta calidad a nuestros clientes, manteniendo los más altos estándares de seguridad alimentaria y sostenibilidad en nuestras operaciones.
+              <p className="text-gray-600 dark:text-gray-500">
+              Domel Produce is committed to delivering premium quality products to consumers worldwide, fostering strong partnerships with producers and maintaining the highest industry standards in all aspects of our operations.
               </p>
             </div>
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                Nuestra Visión
+                Our Vision
               </h2>
-              <p className="text-gray-500 dark:text-gray-400">
-                Ser líderes en la industria frutícola, reconocidos por nuestra calidad, innovación y compromiso con la sostenibilidad.
+              <p className="text-gray-600 dark:text-gray-500">
+              To be the global leader in sustainable agricultural product distribution, recognized for our unwavering commitment to quality, innovation, and customer satisfaction, while empowering local producers and contributing to healthier communities worldwide.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      {/* Our Reason to Be Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900/10">
         <div className="container px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-12">
-            Nuestros Valores
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="p-4 bg-green-100 rounded-full dark:bg-green-900/20">
-                <svg
-                  className="w-6 h-6 text-green-600 dark:text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold">Calidad</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                Nos comprometemos a ofrecer productos de la más alta calidad.
-              </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+              <Image
+                src="/avocado.jpg"
+                alt="Fresh produce from Domel Produce"
+                fill
+                className="object-cover"
+              />
             </div>
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="p-4 bg-green-100 rounded-full dark:bg-green-900/20">
-                <svg
-                  className="w-6 h-6 text-green-600 dark:text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
-                  />
-                </svg>
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-4">
+                  Our Reason to Be
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 text-lg">
+                  At Domel Produce, we're driven by a commitment to deliver premium quality fruits and vegetables while fostering sustainable agriculture and supporting local communities.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Innovación</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                Buscamos constantemente nuevas formas de mejorar nuestros procesos.
-              </p>
-            </div>
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="p-4 bg-green-100 rounded-full dark:bg-green-900/20">
-                <svg
-                  className="w-6 h-6 text-green-600 dark:text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                  />
-                </svg>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="p-2 bg-green-100 rounded-lg dark:bg-green-900/20">
+                    <svg
+                      className="w-6 h-6 text-green-600 dark:text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2">Quality Excellence</h3>
+                    <p className="text-gray-600 dark:text-gray-400">We maintain rigorous quality standards throughout our supply chain, ensuring only the finest produce reaches your table.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="p-2 bg-green-100 rounded-lg dark:bg-green-900/20">
+                    <svg
+                      className="w-6 h-6 text-green-600 dark:text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2">Sustainable Practices</h3>
+                    <p className="text-gray-600 dark:text-gray-400">Our commitment to environmental stewardship ensures responsible farming practices and resource conservation.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="p-2 bg-green-100 rounded-lg dark:bg-green-900/20">
+                    <svg
+                      className="w-6 h-6 text-green-600 dark:text-green-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-xl mb-2">Global Impact</h3>
+                    <p className="text-gray-600 dark:text-gray-400">We connect local farmers with international markets, creating sustainable economic opportunities for communities.</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold">Sostenibilidad</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                Trabajamos respetando el medio ambiente y las comunidades locales.
-              </p>
             </div>
           </div>
         </div>
