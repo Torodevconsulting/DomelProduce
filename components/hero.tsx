@@ -31,7 +31,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-0">
+    <section id="hero" className="relative min-h-screen flex items-center pt-24 md:pt-32">
       {/* Background image carousel */}
       {backgroundImages.map((image, index) => (
         <div 
