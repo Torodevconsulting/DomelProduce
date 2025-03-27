@@ -45,6 +45,7 @@ export default function Hero() {
             priority={index === 0}
             className="object-cover object-center"
           />
+          <div className="absolute inset-0 backdrop-blur-[3px] bg-black/50"></div>
         </div>
       ))}
       
