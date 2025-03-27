@@ -48,7 +48,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Reason to Be Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-green-50 dark:bg-green-900/10">
+      <section className="w-full py-12 md:py-24 lg:py-32 dark:bg-green-900/10">
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
@@ -164,7 +164,7 @@ export default function AboutPage() {
       </section>
 
       {/* We're going places Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-green-50 dark:bg-green-900/10">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-200 dark:bg-green-900/10">
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8">
             We're going places
@@ -172,7 +172,7 @@ export default function AboutPage() {
           <p className="text-gray-600 dark:text-gray-400 text-lg text-center mb-12 max-w-3xl mx-auto">
             From our fields in Peru to tables around the world, we're proud to export premium quality produce to major markets globally.
           </p>
-          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border-2 border-green-200 dark:border-green-900/30 shadow-xl">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border-2 border-green-200 bg-white dark:border-green-900/30 shadow-xl">
             <Image
               src="/mapaexport.png"
               alt="Global Export Operations Map"
