@@ -15,10 +15,10 @@ export default function UseCases() {
       metrics: ["99.7% accuracy in critical control points", "99% elimination of potential contaminants", "99% elimination of potential contaminants"],
     },
     {
-      title: "ISO 22000",
-      description: "We support our management with an international food safety system that optimizes processes and maintains world-class standards.",
-      image: "/iso22000.png",
-      metrics: ["85% improvement in operational efficiency", "92% reduction in process errors", "78% optimization of quality costs"],
+      title: "SMETA",
+      description: "Our ethical commitment guarantees fair labor conditions, transparency, and social responsibility throughout our entire fruit production chain.",
+      image: "/smeta.png",
+      metrics: ["95% improvement in worker welfare conditions", "Increased visibility in production processes", "Alignment with global social responsibility guidelines"],
     },
     {
       title: "Organic Certification",
@@ -47,7 +47,9 @@ export default function UseCases() {
           <div className="grid md:grid-cols-4 gap-8">
             {useCases.map((useCase, index) => (
               <div key={index} className="bg-gray-200 rounded-xl p-7 hover:bg-muted transition-colors duration-300">
-                <div className="flex items-center justify-center mb-6"><Image src={useCase.image} alt={useCase.title} width={48} height={48} /></div>
+                <div className="flex items-center justify-center mb-6">
+                  <Image src={useCase.image} alt={useCase.title} width={58} height={58} />
+                </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{useCase.title}</h3>
                 <p className="text-foreground/70 mb-6">{useCase.description}</p>
                 <ul className="grid gap-2">

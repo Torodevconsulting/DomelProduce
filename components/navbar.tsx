@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import Image from "next/image"
-import Link from "next/link"
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -48,7 +48,7 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center space-x-10">
             <Link
-              href="/about"
+              href="../about/"
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
               About Us
@@ -60,7 +60,7 @@ export default function Navbar() {
               Our Values
             </Link>
             <Link
-              href="/#use-cases"
+              href="/products"
               className="text-foreground/80 hover:text-foreground transition-colors text-sm font-medium"
             >
               Products 
@@ -71,6 +71,7 @@ export default function Navbar() {
             >
               Contact
             </Link>
+          </nav>
 
             {/*
             {/*
@@ -86,8 +87,6 @@ export default function Navbar() {
               </Button>
             )}
           */}
-          
-          </nav>
 
           <div className="flex items-center md:hidden space-x-4">
             {/*
@@ -162,7 +161,7 @@ export default function Navbar() {
                 Our Values
               </Link>
               <Link
-                href="/#use-cases"
+                href="/products"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2 text-left text-lg"
               >
                 Products
