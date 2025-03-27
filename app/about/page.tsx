@@ -215,13 +215,13 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="space-x-4">
-              <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
+              <Button onClick={() => setIsContactModalOpen(true)}>Contáctanos</Button>
             </div>
           </div>
         </div>
       </section>
 
-      
+      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </main>
   )
 }
