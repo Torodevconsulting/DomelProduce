@@ -2,21 +2,21 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Desde el campo",
+      title: "From the Field",
       description:
-        "En Domel Produce, nuestro viaje comienza en los campos más fértiles. Cada fruta es el resultado de un cuidado meticuloso, trabajando en armonía con agricultores locales que conocen cada surco de tierra. Seleccionamos minuciosamente cada cultivo, asegurando que solo los mejores frutos lleguen a nuestras instalaciones.",
+        "t Domel Produce, our journey begins in the most fertile fields. Each fruit is the result of meticulous care, working in harmony with local farmers who know every furrow of land. We carefully select each crop, ensuring that only the best fruits arrive at our facilities.",
     },
     {
       number: "02",
-      title: "Pasando por el Producto",
+      title: "Through the Product",
       description:
-        "Transformamos la riqueza natural en productos de la más alta calidad. Nuestros procesos de selección, limpieza y empaque están diseñados para preservar la esencia y frescura de cada fruta. Con tecnología de punta y un equipo dedicado, garantizamos que cada producto mantenga su sabor original y sus propiedades nutritivas.",
+        "We transform natural richness into the highest quality products. Our selection, cleaning, and packaging processes are designed to preserve the essence and freshness of each fruit. With cutting-edge technology and a dedicated team, we guarantee that each product maintains its original flavor and nutritional properties.",
     },
     {
       number: "03",
-      title: "Hasta la gente",
+      title: "To the Consumer's Table",
       description:
-        "Nuestra misión no termina con la exportación. Nos comprometemos a que cada fruta de Domel Produce recorra un camino seguro hasta el consumidor final. Desde sofisticados métodos de conservación hasta una logística eficiente, nos aseguramos de que nuestros productos lleguen intactos, manteniendo su calidad excepcional.",
+        "Our mission does not end with exportation. We are committed to ensuring that each Domel Produce fruit travels a safe path to the end consumer. From sophisticated preservation methods to efficient logistics, we make sure our products arrive intact, maintaining their exceptional quality.",
     },
   ]
 
@@ -27,12 +27,12 @@ export default function HowItWorks() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="h-px w-8 bg-green-700"></div>
-              <span className="text-green-700 font-medium text-sm">Nuestros Valores</span>
+              <span className="text-green-700 font-medium text-sm">Our Values</span>
               <div className="h-px w-8 bg-green-700"></div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Del campo a tu mesa</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">From the fiel to the table</h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Domel Produce: Cultivando calidad, exportando sabor.
+            Domel Produce: Growing Quality, Shipping Taste.
             </p>
           </div>
 

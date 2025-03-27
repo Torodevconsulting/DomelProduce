@@ -10,7 +10,7 @@ export const metadata = {
   title: "Domel Produce - Fresh Quality Produce",
   description:
     "Domel Produce, fresh produce from the finest farms to global markets.",
-    generator: 'v0.dev'
+    generator: 'ToroDevelopmentConsulting'
 }
 
 export default function RootLayout({

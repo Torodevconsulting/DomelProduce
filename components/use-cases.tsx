@@ -4,27 +4,27 @@ export default function UseCases() {
   const useCases = [
     {
       title: "Global Gap",
-      description: "Nuestro compromiso con la excelencia agrícola, garantizando trazabilidad, sostenibilidad y seguridad en cada etapa de producción de frutas.",
+      description: "Our commitment to agricultural excellence, ensuring traceability, sustainability, and safety at every stage of fruit production.",
       image: "/globalgap.png",
-      metrics: ["98% de reducción de riesgos fitosanitarios", "Control de trazabilidad en el 100% de la cadena de producción", "Cumplimiento del 95% de protocolos de sostenibilidad agrícola"],
+      metrics: ["98% reduction in phytosanitary risks", "100% traceability control throughout the production chain", "95% compliance with agricultural sustainability protocols"],
     },
     {
       title: "HACCP",
-      description: "Implementamos rigurosos protocolos de control alimentario que previenen riesgos, asegurando la máxima calidad e inocuidad de nuestras frutas.",
+      description: "We implement rigorous food control protocols that prevent risks, ensuring the highest quality and safety of our fruits.",
       image: "/haccp.png",
-      metrics: ["99.7% de precisión en control de puntos críticos", "Eliminación del 99% de potenciales contaminantes", "Eliminación del 99% de potenciales contaminantes"],
+      metrics: ["99.7% accuracy in critical control points", "99% elimination of potential contaminants", "99% elimination of potential contaminants"],
     },
     {
       title: "ISO 22000",
-      description: "Respaldamos nuestra gestión con un sistema internacional de seguridad alimentaria que optimiza procesos y mantiene estándares de clase mundial.",
+      description: "We support our management with an international food safety system that optimizes processes and maintains world-class standards.",
       image: "/iso22000.png",
-      metrics: ["Mejora de eficiencia operativa en un 85%", "Reducción de errores de proceso en un 92%", "Optimización de costos de calidad en un 78%"],
+      metrics: ["85% improvement in operational efficiency", "92% reduction in process errors", "78% optimization of quality costs"],
     },
     {
       title: "Organic Certification",
-      description: "Ratificamos nuestro compromiso con prácticas agrícolas naturales, libres de químicos, que preservan el ecosistema y la salud del consumidor.",
+      description: "We confirm our commitment to natural agricultural practices, chemical-free, that preserve the ecosystem and consumer health.",
       image: "/organic.png",
-      metrics: ["100% libre de pesticidas sintéticos", "90% menor impacto ambiental vs agricultura tradicional", "85% de conservación de biodiversidad en zonas de cultivos"],
+      metrics: ["100% free of synthetic pesticides", "90% lower environmental impact vs traditional agriculture", "85% biodiversity conservation in cultivation areas"],
     },
   ]
 
@@ -35,12 +35,12 @@ export default function UseCases() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="h-px w-8 bg-green-700"></div>
-              <span className="text-green-700 font-medium text-sm">LO QUE RESPALDA NUESTRA CALIDAD</span>
+              <span className="text-green-700 font-medium text-sm">WHAT BACKS OUR QUALITY</span>
               <div className="h-px w-8 bg-purple-500"></div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Certificaciones</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Certifications</h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Nuestros productos cuentan con certificaciones internacionales líderes como Global GAP, HACCP, ISO 22000, Fair Trade y Organic Certification. Estas acreditaciones garantizan un proceso de producción sostenible, seguro y de máxima calidad.
+            Our products have leading international certifications such as Global GAP, HACCP, ISO 22000, Fair Trade, and Organic Certification. These accreditations guarantee a sustainable, safe, and highest quality production process.
             </p>
           </div>
 

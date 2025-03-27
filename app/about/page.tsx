@@ -2,8 +2,12 @@
 
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import ContactModal from "@/components/contact-modal"
+import { useState } from "react"
 
 export default function AboutPage() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-24 pb-12">
       {/* Hero Section */}
@@ -211,13 +215,13 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="space-x-4">
-              <Button className="bg-green-300 hover:bg-green-400 text-black">
-                Contactar Ahora
-              </Button>
+              <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
             </div>
           </div>
         </div>
       </section>
+
+      
     </main>
   )
 }
