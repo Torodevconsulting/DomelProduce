@@ -73,7 +73,7 @@ export default function Hero() {
               onClick={() => scrollToSection("final-cta")}
               className="bg-green-300 hover:bg-green-400 text-black px-8 py-6 text-lg h-auto"
             >
-              Contáctanos
+              Contact Us
             </Button>
             <Button
               size="lg"
@@ -88,7 +88,7 @@ export default function Hero() {
                 document.body.removeChild(link);
               }}
             >
-              Descarga Nuestro Catálogo
+              Download our Catalog
               <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>

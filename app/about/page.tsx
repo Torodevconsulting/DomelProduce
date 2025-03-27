@@ -180,16 +180,6 @@ export default function AboutPage() {
               className="object-contain"
               priority
             />
-            <div className="absolute bottom-4 left-4 space-y-2">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <span className="text-sm text-gray-600 dark:text-gray-400">Active Export Routes</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-                <span className="text-sm text-gray-600 dark:text-gray-400">Distribution Centers</span>
-              </div>
-            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="p-6 bg-white dark:bg-green-900/5 rounded-lg shadow-sm border border-green-100 dark:border-green-900/10">
