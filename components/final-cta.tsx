@@ -15,7 +15,7 @@ Nombre: ${name}
 Empresa: ${companyName}
 Email: ${email}
 
-Por favor, contáctame para más detalles.`
+Por favor, contáctame para que me puedas compartir la información..`
 
     const whatsappUrl = `https://wa.me/+34632648270?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
