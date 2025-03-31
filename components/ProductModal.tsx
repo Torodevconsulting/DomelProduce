@@ -81,42 +81,46 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose })
             
             {hasVarieties ? (
               // Calendar for products with varieties
-              <div className="border rounded-lg overflow-hidden w-full">
-                <div className="grid grid-cols-[1.5fr_repeat(12,1fr)] bg-gray-100">
-                  <div className="p-2 font-semibold"></div>
-                  {monthNames.map((month, idx) => (
-                    <div key={idx} className="p-2 text-center font-semibold">{month}</div>
+              <div className="overflow-x-auto pb-2">
+                <div className="border rounded-lg overflow-hidden w-full min-w-[800px]">
+                  <div className="grid grid-cols-[1.5fr_repeat(12,1fr)] bg-gray-100">
+                    <div className="p-2 font-semibold"></div>
+                    {monthNames.map((month, idx) => (
+                      <div key={idx} className="p-2 text-center font-semibold">{month}</div>
+                    ))}
+                  </div>
+                  
+                  {Object.entries(productVarieties[product.name as keyof typeof productVarieties]).map(([variety, data], idx) => (
+                    <div key={idx} className="grid grid-cols-[1.5fr_repeat(12,1fr)] border-t">
+                      <div className="p-2 font-semibold">{variety}</div>
+                      {data.months.map((available, monthIdx) => (
+                        <div key={monthIdx} className="p-2 flex justify-center items-center">
+                          <div className={`w-6 h-6 rounded-md ${available ? 'bg-green-400' : 'bg-green-100'}`}></div>
+                        </div>
+                      ))}
+                    </div>
                   ))}
                 </div>
-                
-                {Object.entries(productVarieties[product.name as keyof typeof productVarieties]).map(([variety, data], idx) => (
-                  <div key={idx} className="grid grid-cols-[1.5fr_repeat(12,1fr)] border-t">
-                    <div className="p-2 font-semibold">{variety}</div>
-                    {data.months.map((available, monthIdx) => (
-                      <div key={monthIdx} className="p-2 flex justify-center items-center">
+              </div>
+            ) : (
+              // Standard calendar for products without varieties (all year availability)
+              <div className="overflow-x-auto pb-2">
+                <div className="border rounded-lg overflow-hidden w-full min-w-[800px]">
+                  <div className="grid grid-cols-[1.5fr_repeat(12,1fr)] bg-gray-100">
+                    <div className="p-2 font-semibold"></div>
+                    {monthNames.map((month, idx) => (
+                      <div key={idx} className="p-2 text-center font-semibold">{month}</div>
+                    ))}
+                  </div>
+                  
+                  <div className="grid grid-cols-[1.5fr_repeat(12,1fr)] border-t">
+                    <div className="p-2 font-semibold">{product.name}</div>
+                    {defaultAvailability.months.map((available, idx) => (
+                      <div key={idx} className="p-2 flex justify-center items-center">
                         <div className={`w-6 h-6 rounded-md ${available ? 'bg-green-400' : 'bg-green-100'}`}></div>
                       </div>
                     ))}
                   </div>
-                ))}
-              </div>
-            ) : (
-              // Standard calendar for products without varieties (all year availability)
-              <div className="border rounded-lg overflow-hidden w-full">
-                <div className="grid grid-cols-[1.5fr_repeat(12,1fr)] bg-gray-100">
-                  <div className="p-2 font-semibold"></div>
-                  {monthNames.map((month, idx) => (
-                    <div key={idx} className="p-2 text-center font-semibold">{month}</div>
-                  ))}
-                </div>
-                
-                <div className="grid grid-cols-[1.5fr_repeat(12,1fr)] border-t">
-                  <div className="p-2 font-semibold">{product.name}</div>
-                  {defaultAvailability.months.map((available, idx) => (
-                    <div key={idx} className="p-2 flex justify-center items-center">
-                      <div className={`w-6 h-6 rounded-md ${available ? 'bg-green-400' : 'bg-green-100'}`}></div>
-                    </div>
-                  ))}
                 </div>
               </div>
             )}
