@@ -7,10 +7,28 @@ import Navbar from "@/components/navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Domel Produce - Fresh Quality Produce",
-  description:
-    "Domel Produce, fresh produce from the finest farms to global markets.",
-    generator: 'ToroDevelopmentConsulting'
+  title: "Domel Produce - Fresh Quality Produce from Peru",
+  description: "Premium exporter of Peruvian avocados, mangoes, grapes, lemons, tangerines and more. High-quality fresh produce for global markets.",
+  generator: 'ToroDevelopmentConsulting',
+  keywords: [
+    "Peruvian produce", "fresh fruit export", "avocado export", "mango export", 
+    "grape export", "Peruvian agriculture", "premium fruit", "fresh produce", 
+    "Domel Produce", "fruit exporter Peru", "quality produce", "sustainable farming", 
+    "organic produce", "local produce", "Peruvian produce", "avocado exporter", "mango exporter",
+    "grape exporter", "Peruvian agriculture", "premium fruit", "fresh produce", "Domel Produce", "Beans Exporter", "Citrus Exporter", "Tangerines Exporter", "Lemons Exporter", "Peruvian produce", "avocado exporter", "mango exporter", "grape exporter", "Peruvian agriculture", "premium fruit", "fresh produce", "Domel Produce", "Beans Exporter", "Citrus Exporter", "Tangerines Exporter", "Lemons Exporter"
+  ],
+  openGraph: {
+    title: "Domel Produce - Premium Peruvian Fruit Exporter",
+    description: "Exporting the finest Peruvian avocados, mangoes, grapes, and citrus fruits to global markets.",
+    url: "https://domelproduce.com",
+    siteName: "Domel Produce",
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
