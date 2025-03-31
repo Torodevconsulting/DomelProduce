@@ -16,7 +16,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none p-10">
-                ¿Who we are and what's the Domel Produce value to the market?
+                Who we are and what's the Domel Produce value to the market?
               </h1>
               <p className="mx-auto w-full text-gray-500 md:text-xl dark:text-gray-400 p-10">
               We're a family company, dedicated to the production of mango, avocado, lemon, ginger, onion, tangerine, orange and grape. Us have international quality certifications, guaranteeing the high quality of our products.
@@ -208,7 +208,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                ¿Looking for a reliable source of premium Peruvian fruits??
+                Looking for a reliable source of premium Peruvian fruits??
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
               Unlock the potential of Peru's finest produce: Connect with our team to explore our comprehensive product lineup.
