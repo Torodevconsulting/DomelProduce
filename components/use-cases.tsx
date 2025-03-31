@@ -9,16 +9,16 @@ export default function UseCases() {
       metrics: ["98% reduction in phytosanitary risks", "100% traceability control throughout the production chain", "95% compliance with agricultural sustainability protocols"],
     },
     {
-      title: "HACCP",
-      description: "We implement rigorous food control protocols that prevent risks, ensuring the highest quality and safety of our fruits.",
-      image: "/haccp.png",
-      metrics: ["99.7% accuracy in critical control points", "99% elimination of potential contaminants", "99% elimination of potential contaminants"],
-    },
-    {
       title: "SMETA",
       description: "Our ethical commitment guarantees fair labor conditions, transparency, and social responsibility throughout our entire fruit production chain.",
       image: "/smeta.png",
       metrics: ["95% improvement in worker welfare conditions", "Increased visibility in production processes", "Alignment with global social responsibility guidelines"],
+    },
+    {
+      title: "USDA Certification",
+      description: "Our USDA certification ensures that our fruits meet the highest standards of quality, safety, and organic integrity as set by the United States Department of Agriculture.",
+      image: "/usda.png",
+      metrics: ["100% compliance with USDA organic standards", "Enhanced market access in the United States", "Rigorous annual inspections passed"],
     },
     {
       title: "Organic Certification",
@@ -40,7 +40,7 @@ export default function UseCases() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Certifications</h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Our products have leading international certifications such as Global GAP, HACCP, ISO 22000, Fair Trade, and Organic Certification. These accreditations guarantee a sustainable, safe, and highest quality production process.
+            Our products have leading international certifications such as Global Gap, USDA, ISO 22000, Fair Trade, and Organic Certification. These accreditations guarantee a sustainable, safe, and highest quality production process.
             </p>
           </div>
 

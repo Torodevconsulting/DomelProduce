@@ -17,7 +17,7 @@ Email: ${email}
 
 Por favor, contáctame para más detalles.`
 
-    const whatsappUrl = `https://wa.me/+51941963705?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://wa.me/+34632648270?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
   }
 

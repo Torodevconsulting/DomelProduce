@@ -1,22 +1,24 @@
+import { Ship, Package, Handshake } from 'lucide-react'
+
 export default function HowItWorks() {
   const steps = [
     {
-      number: "01",
-      title: "From the Field",
+      icon: <Ship className="w-12 h-12 text-green-700" />,
+      title: "Commercial Vision",
       description:
-        "t Domel Produce, our journey begins in the most fertile fields. Each fruit is the result of meticulous care, working in harmony with local farmers who know every furrow of land. We carefully select each crop, ensuring that only the best fruits arrive at our facilities.",
+        "We've expanded into diverse global markets by cultivating strong business relationships with our clients founded on principles of transparency, open communication, and unwavering commitment. Looking ahead, our vision encompasses reaching additional countries with an expanded product portfolio while pioneering innovative distribution channels to better serve our customers worldwide.",
     },
     {
-      number: "02",
-      title: "Through the Product",
+      icon: <Package className="w-12 h-12 text-green-700" />,
+      title: "Advanced Quality Management",
       description:
-        "We transform natural richness into the highest quality products. Our selection, cleaning, and packaging processes are designed to preserve the essence and freshness of each fruit. With cutting-edge technology and a dedicated team, we guarantee that each product maintains its original flavor and nutritional properties.",
+        "Our operations span a comprehensive network of packing facilities across Peru. Each facility adheres to superior safety protocols and features cutting-edge infrastructure. We implement advanced preservation and refrigeration technologies that extend product longevity while preserving their inherent qualities and natural characteristics.",
     },
     {
-      number: "03",
-      title: "To the Consumer's Table",
+      icon: <Handshake className="w-12 h-12 text-green-700" />,
+      title: "Building Trust Across Peru's Fields",
       description:
-        "Our mission does not end with exportation. We are committed to ensuring that each Domel Produce fruit travels a safe path to the end consumer. From sophisticated preservation methods to efficient logistics, we make sure our products arrive intact, maintaining their exceptional quality.",
+        "Our company maintains a comprehensive supplier network spanning all of Peru's production regions. Throughout our history, we have fostered transparent partnerships with each supplier, supporting their field development and business assessment processes while connecting their products with premium market opportunities..",
     },
   ]
 
@@ -30,7 +32,7 @@ export default function HowItWorks() {
               <span className="text-green-700 font-medium text-sm">Our Values</span>
               <div className="h-px w-8 bg-green-700"></div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">From the fiel to the table</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Our Approach in Action</h2>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
             Domel Produce: Growing Quality, Shipping Taste.
             </p>
@@ -40,8 +42,8 @@ export default function HowItWorks() {
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="flex flex-col md:flex-row gap-8 items-start">
-                  <div className="md:w-1/4 flex flex-col">
-                    <span className="text-5xl font-bold text-green-700/30">{step.number}</span>
+                  <div className="md:w-1/4 flex flex-col items-center md:items-start">
+                    {step.icon}
                   </div>
                   <div className="md:w-3/4">
                     <h3 className="text-2xl font-bold text-foreground mb-4">{step.title}</h3>

@@ -80,8 +80,8 @@ export default function Hero() {
               className="text-black border hover:bg-white/5 px-8 py-6 text-lg h-auto group"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/cvtest.pdf';
-                link.download = 'cvtest.pdf';
+                link.href = '/brochuredomelproduce.pdf';
+                link.download = 'brochuredomelproduce.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
