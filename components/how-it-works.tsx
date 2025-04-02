@@ -38,16 +38,18 @@ export default function HowItWorks() {
             </p>
           </div>
 
-          <div className="space-y-16 md:space-y-24">
+          <div className="flex flex-col space-y-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="flex flex-col md:flex-row gap-8 items-start">
-                  <div className="md:w-1/4 flex flex-col items-center md:items-start">
-                    {step.icon}
+              <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="flex flex-col md:flex-row">
+                  <div className="md:w-1/4 p-6 flex items-center justify-center bg-green-50">
+                    <div className="p-4 rounded-full w-16 h-16 flex items-center justify-center">
+                      {step.icon}
+                    </div>
                   </div>
-                  <div className="md:w-3/4">
-                    <h3 className="text-2xl font-bold text-foreground mb-4">{step.title}</h3>
-                    <p className="text-foreground/70 text-lg leading-relaxed">{step.description}</p>
+                  <div className="md:w-3/4 p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
+                    <p className="text-foreground/70 text-base leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               </div>
