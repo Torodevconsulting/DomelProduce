@@ -14,10 +14,10 @@ export default function CookiePolicy() {
       return
     }
 
-    // Hide after 60 seconds
+    // Auto accept all cookies after 40 seconds
     const timer = setTimeout(() => {
-      setIsVisible(false)
-    }, 60000)
+      handleChoice('all')
+    }, 40000)
 
     return () => clearTimeout(timer)
   }, [])
