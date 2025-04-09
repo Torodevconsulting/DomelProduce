@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent, analyticsEvents } from '@/utils/analytics';
 import Hero from "@/components/hero"
 import ProblemStatement from "@/components/problem-statement"
 import HowItWorks from "@/components/how-it-works"
@@ -14,6 +15,16 @@ import { Button } from "@/components/ui/button"
 export default function LandingPage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
+  const handleCatalogDownload = () => {
+    trackEvent(analyticsEvents.CATALOG_DOWNLOAD);
+    const link = document.createElement('a');
+    link.href = '/brochuredomelproduce.pdf';
+    link.download = 'brochuredomelproduce.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <main className="min-h-screen">
       <Hero />
@@ -21,7 +32,7 @@ export default function LandingPage() {
       <HowItWorks />
       <UseCases />
       <Testimonials />
-      <FinalCTA />
+      <FinalCTA onClick={handleCatalogDownload} />
       <Footer />
       <ContactModal 
         isOpen={isContactModalOpen} 

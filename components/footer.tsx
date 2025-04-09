@@ -38,8 +38,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border/10 text-center">
-          <p className="text-sm text-foreground/70">&copy; {new Date().getFullYear()} Domel Produce. All rights reserved.</p>
+          <p className="text-sm text-foreground/70">Domel Produce. All rights reserved.</p>
           <p className="text-sm text-foreground/70">Lima, Peru.</p>
+          <p className="text-sm text-foreground/70">&copy; {new Date().getFullYear()} Toro Developments Consulting S.A</p>
         </div>
       </div>
     </footer>

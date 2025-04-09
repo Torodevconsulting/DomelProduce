@@ -4,12 +4,18 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import CookiePolicy from "@/components/cookie-policy"
+import GoogleAnalytics from "@/components/google-analytics"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Domel Produce - Fresh Quality Produce from Peru",
-  description: "Premium exporter of Peruvian avocados, mangoes, grapes, lemons, tangerines and more. High-quality fresh produce for global markets.",
+  description: "Premium exporter of Peruvian avocados, mangoes, grapes, lemons, tangerines and more.",
+  icons: {
+    icon: '/torodev.ico',
+    // You can also add other sizes if needed
+    apple: '/apple-icon.png',
+  },
   generator: 'ToroDevelopmentConsulting',
   keywords: [
     "Peruvian produce", "fresh fruit export", "avocado export", "mango export", 
@@ -44,6 +50,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <CookiePolicy />
+          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>

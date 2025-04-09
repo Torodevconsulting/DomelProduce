@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Image from 'next/image';
+import { trackEvent, analyticsEvents } from '@/utils/analytics';
 
 // Define product varieties and their availability
 const productVarieties = {
@@ -50,6 +51,14 @@ interface ProductModalProps {
 const ProductModal: React.FC<ProductModalProps> = ({ product, isOpen, onClose }) => {
   // Check if this product has varieties defined
   const hasVarieties = Object.keys(productVarieties).includes(product.name);
+
+  useEffect(() => {
+    if (isOpen) {
+      trackEvent(analyticsEvents.PRODUCT_VIEW, {
+        product_name: product.name
+      });
+    }
+  }, [isOpen, product.name]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>

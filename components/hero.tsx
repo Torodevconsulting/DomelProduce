@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
 import Image from "next/image"
+import { trackEvent, analyticsEvents } from '@/utils/analytics'
 
 export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -79,6 +80,7 @@ export default function Hero() {
               variant="outline"
               className="text-black border hover:bg-white/5 px-8 py-6 text-lg h-auto group"
               onClick={() => {
+                trackEvent(analyticsEvents.CATALOG_DOWNLOAD);
                 const link = document.createElement('a');
                 link.href = '/brochuredomelproduce.pdf';
                 link.download = 'brochuredomelproduce.pdf';
