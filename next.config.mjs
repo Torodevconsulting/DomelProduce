@@ -8,19 +8,17 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: process.env.NODE_ENV === 'development',
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: process.env.NODE_ENV === 'development',
   },
   images: {
-    unoptimized: true,
+    // Remove unoptimized: true to enable Vercel's optimization
+    formats: ['image/avif', 'image/webp'],
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  },
+  // Remove experimental features unless absolutely necessary
+  // experimental: { ... },
 }
 
 mergeConfig(nextConfig, userConfig)

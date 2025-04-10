@@ -41,10 +41,12 @@ export default function Hero() {
         >
           <Image 
             src={image} 
-            alt="Background" 
+            alt={`Background ${index + 1}`} 
             fill 
             priority={index === 0}
             className="object-cover object-center"
+            quality={85}
+            sizes="100vw"
           />
           <div className="absolute inset-0 backdrop-blur-[3px] bg-black/20"></div>
         </div>

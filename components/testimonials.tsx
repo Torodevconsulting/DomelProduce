@@ -65,11 +65,13 @@ export default function Testimonials() {
                   </button>
                 </div>
               </div>
-              <div className="hidden md:block">
-                <img
+              <div className="hidden md:block relative h-full">
+                <Image
                   src="/manzanas.jpg"
                   alt="Case study preview"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
