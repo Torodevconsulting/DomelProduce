@@ -19,7 +19,7 @@ export default function FinalCTA({ onClick }: FinalCTAProps) {
       source: 'final_cta'
     });
     const message = `Hello, I'm ${name} from ${companyName}. I'd like to learn more about your products.`;
-    const whatsappUrl = `https://wa.me/YOUR_WHATSAPP_NUMBER?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+51969877761?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
