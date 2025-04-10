@@ -16,17 +16,17 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   const [message, setMessage] = useState('');
 
   const handleWhatsAppContact = () => {
-    const whatsappMessage = `Hola, me gustaría obtener información sobre las campañas de exportación de Domel Produce:
+    const whatsappMessage = `Hi, i would like to receive more information about fresh produce exports programs of Domel Produce:
 
 Nombre: ${name}
 Empresa: ${companyName}
 Email: ${email}
 
 Mensaje: ${message}
+ 
+Please, i'll be waiting for the business information.`;
 
-Por favor, contáctame para que me puedas compartir la información.`;
-
-    const whatsappUrl = `https://wa.me/+34632648270?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/+51969877761?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
   };
 
