@@ -22,7 +22,7 @@ export default function Testimonials() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-6">Backed by our customers experience</h2>
           <p className="text-xl text-center text-foreground/70 mb-16 max-w-3xl mx-auto">
-          +1000 successful international export programs. 
+          500 successful international export programs. 
           </p>
 
           {/* Carousel */}
@@ -54,7 +54,7 @@ export default function Testimonials() {
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text- mb-4">Our Success: Avocado, Mango, and Grape</h3>
                 <p className="text-black mb-6">
-                Our star products have positioned Domel Produce as a reference in Peruvian fruit export. With revenues of 21 million dollars in 2024 and a clear vision of expansion in the European market, we are your best ally in fruit importation.
+                Our star products have positioned Domel Produce as a reference in Peruvian fruit export, with a clear vision of expansion in the European market, we are your best ally in fruit importation.
                 </p>
                 <div>
                   <button
