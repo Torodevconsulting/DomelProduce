@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import CookiePolicy from "@/components/cookie-policy"
 import GoogleAnalytics from "@/components/google-analytics"
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -51,6 +52,7 @@ export default function RootLayout({
           {children}
           <CookiePolicy />
           <GoogleAnalytics />
+          <Analytics /> {/* Added Vercel Analytics component */}
         </ThemeProvider>
       </body>
     </html>
