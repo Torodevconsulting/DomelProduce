@@ -66,7 +66,7 @@ export default function Navbar() {
               Products 
             </Link>
             <Link
-              href="/#final-cta"
+              href="/#contact-form"
               className="bg-green-300 hover:bg-green-400 text-black rounded-md px-4 py-2 text-sm font-medium"
             >
               Contact

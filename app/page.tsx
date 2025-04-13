@@ -7,7 +7,7 @@ import ProblemStatement from "@/components/problem-statement"
 import HowItWorks from "@/components/how-it-works"
 import UseCases from "@/components/use-cases"
 import Testimonials from "@/components/testimonials"
-import FinalCTA from "@/components/final-cta"
+import ContactForm from "@/components/contact-form"
 import Footer from "@/components/footer"
 import ContactModal from "@/components/contact-modal"
 import { Button } from "@/components/ui/button"
@@ -32,7 +32,7 @@ export default function LandingPage() {
       <HowItWorks />
       <UseCases />
       <Testimonials />
-      <FinalCTA onClick={handleCatalogDownload} />
+      <ContactForm onClick={handleCatalogDownload} />
       <Footer />
       <ContactModal 
         isOpen={isContactModalOpen} 
