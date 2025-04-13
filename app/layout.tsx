@@ -10,12 +10,17 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Domel Produce - Fresh Quality Produce from Peru",
+  title: "Domel Produce - Fresh Produce Exports from Peru",
   description: "Premium exporter of Peruvian avocados, mangoes, grapes, lemons, tangerines and more.",
   icons: {
-    icon: '/torodev.ico',
+    icon: '/favicon.ico',
     // You can also add other sizes if needed
-    apple: '/apple-icon.png',
+    apple: '/apple-touch-icon.png',
+    favicon16:'/favicon-16x16.png',
+    favicon32:'/favicon-32x32.png',
+    chrome512:'/android-chrome-512x512.png',
+    chrome192:'/android-chrome-192x192.png',
+
   },
   generator: 'ToroDevelopmentConsulting',
   keywords: [
