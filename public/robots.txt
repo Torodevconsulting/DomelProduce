@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://domelproduce.com
+Host: https://www.domelproduce.com
 
 # Sitemaps
-Sitemap: https://domelproduce.com/sitemap.xml
+Sitemap: https://www.domelproduce.com/sitemap.xml

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://domelproduce.com',
+  siteUrl: 'https://www.domelproduce.com', // Added www
   generateRobotsTxt: true,
   exclude: ['/404'],
   robotsTxtOptions: {
@@ -9,6 +9,9 @@ module.exports = {
         userAgent: '*',
         allow: '/',
       },
+    ],
+    additionalSitemaps: [
+      'https://www.domelproduce.com/sitemap.xml',
     ],
   },
   changefreq: 'weekly',
