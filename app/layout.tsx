@@ -23,7 +23,11 @@ export const metadata = {
     "grape export", "Peruvian agriculture", "premium fruit", "fresh produce", 
     "Domel Produce", "fruit exporter Peru", "quality produce", "sustainable farming", 
     "organic produce", "local produce", "Peruvian produce", "avocado exporter", "mango exporter",
-    "grape exporter", "Peruvian agriculture", "premium fruit", "fresh produce", "Domel Produce", "Beans Exporter", "Citrus Exporter", "Tangerines Exporter", "Lemons Exporter", "Peruvian produce", "avocado exporter", "mango exporter", "grape exporter", "Peruvian agriculture", "premium fruit", "fresh produce", "Domel Produce", "Beans Exporter", "Citrus Exporter", "Tangerines Exporter", "Lemons Exporter"
+    "grape exporter", "Peruvian agriculture", "premium fruit", "fresh produce", "Domel Produce", "Beans Exporter", "Citrus Exporter", "Tangerines Exporter", "Lemons Exporter", "Peruvian produce", "avocado exporter", "mango exporter", "grape exporter", "Peruvian agriculture", "premium fruit", "fresh produce", "Domel Produce", "Beans Exporter", "Citrus Exporter", "Tangerines Exporter", "Lemons Exporter", "Productos peruanos", "exportación de fruta fresca", "exportación de aguacate", "exportación de mango",
+    "exportación de uva", "agricultura peruana", "fruta premium", "productos frescos",
+    "Domel Produce", "exportador de fruta Perú", "productos de calidad", "agricultura sostenible",
+    "productos orgánicos", "productos locales", "productos peruanos", "exportador de aguacate", "exportador de mango",
+    "exportador de uva", "agricultura peruana", "fruta premium", "productos frescos", "Domel Produce", "Exportador de Frijoles", "Exportador de Cítricos", "Exportador de Mandarinas", "Exportador de Limones", "productos peruanos", "exportador de aguacate", "exportador de mango", "exportador de uva", "agricultura peruana", "fruta premium", "productos frescos", "Domel Produce", "Exportador de Frijoles", "Exportador de Cítricos", "Exportador de Mandarinas", "Exportador de Limones"
   ],
   openGraph: {
     title: "Domel Produce - Premium Peruvian Fruit Exporter",
