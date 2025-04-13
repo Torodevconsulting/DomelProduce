@@ -19,6 +19,7 @@ export default function Footer() {
                 <li><Link href="#about" className="text-sm text-foreground/70 hover:text-foreground">About Us</Link></li>
                 <li><Link href="#products" className="text-sm text-foreground/70 hover:text-foreground">Products</Link></li>
                 <li><Link href="#contact" className="text-sm text-foreground/70 hover:text-foreground">Contact</Link></li>
+                <li><Link href="/privacy-policy" className="text-sm text-foreground/70 hover:text-foreground" target="_blank" rel="noopener noreferrer">Privacy Policy</Link></li>
               </ul>
             </nav>
           </div>
