@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -39,6 +40,7 @@
     "@radix-ui/react-tooltip": "^1.1.6",
     "@types/nodemailer": "^6.4.17",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -48,6 +50,7 @@
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
     "next": "^15.3.0",
+    "next-sitemap": "^4.2.3",
     "next-themes": "latest",
     "nodemailer": "^6.10.1",
     "react": "^19",
